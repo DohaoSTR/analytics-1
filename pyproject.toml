@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "analytics-1"
+version = "0.1.0"
+description = ""
+package-mode = false          # ← важно: отключает установку проекта как пакета
+
+[tool.poetry.dependencies]
+python = "==3.12.10"          # или ">=3.12,<3.13"
+numpy = "1.26.4"
+pandas = "2.2.2"
+matplotlib = "3.8.4"
+seaborn = "0.13.2"
+scikit-learn = "1.5.1"
+scipy = "1.13.1"
+statsmodels = "0.14.2"
+requests = "^2.34.2"
+polars = "^1.44.2"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "1.0.0"
+notebook = "7.2.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
