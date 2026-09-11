@@ -1,1 +1,4 @@
 venv/
+data/archive/
+data/parquet/
+data/optimized_v1/
