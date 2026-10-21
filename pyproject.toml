@@ -6,7 +6,7 @@ package-mode = false          # ← важно: отключает устано�
 
 [tool.poetry.dependencies]
 python = "==3.12.10"          # или ">=3.12,<3.13"
-numpy = "1.26.4"
+numpy = ">=2.0.0"
 pandas = "2.2.2"
 matplotlib = "3.8.4"
 seaborn = "0.13.2"
@@ -16,6 +16,8 @@ statsmodels = "0.14.2"
 requests = "^2.34.2"
 polars = "^1.44.2"
 pyarrow = "14.0.1"
+psycopg = {version = ">=3.1", extras = ["binary"]}
+py3langid = "^0.4.0"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "1.0.0"

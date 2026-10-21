@@ -1,4 +1,18 @@
 venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# данные и производные артефакты
 data/archive/
 data/parquet/
 data/optimized_v1/
+data/optimized_v1_clean/
+
+*.sqlite
+*.sqlite-journal
+*.parquet
+
+anomalies_with_links.csv
+authors_anomalies.csv
+passport_stats.json
